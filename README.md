@@ -19,7 +19,20 @@ Then, restart your redmine.
 
 Requirements
 ------------------------------
-* Redmine 2.6 or later
+* Redmine 4.x - 6.x
+
+Redmine 7.0 or later is not supported. Redmine 7.0 converts pasted tables
+by itself, so this plugin does nothing on Redmine 7.0 or later.
+
+The plugin works only when the text formatting setting is Markdown or
+CommonMark Markdown.
+
+Development
+------------------------------
+Requires Node.js (for tests) and Ruby (for syntax check).
+
+    $ make lint
+    $ make test
 
 License
 ------------------------------
